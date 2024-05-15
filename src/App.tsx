@@ -76,7 +76,7 @@ function App() {
               <FaArrowRight size={30} onClick={nextSlide} className='text-white'/>
               </div>
               <div className=' flex top-4 justify-center py-2 z-30'>
-                    {slides.map((slide, slideIndex) =>(
+                    {slides.map((_, slideIndex) =>(
                       <div 
                         key={slideIndex} 
                         onClick={() => goToSlide(slideIndex) } 
