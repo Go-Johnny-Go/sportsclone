@@ -61,7 +61,7 @@ function App() {
       </nav>
       {/*Image Slider */}
       <section className='z-30' >
-        <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 static md:relative group  z-30'>
+        <div className='max-w-[180px] h-[780px] w-full m-auto py-16 px-4 static md:relative group  z-30'>
           <div style={{backgroundImage:`url(${slides[currentIndex].url})`}} 
               className='w-full h-full   rounded-2xl bg-center bg-cover duration-500  z-10'>
            </div>     
