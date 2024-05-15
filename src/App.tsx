@@ -45,7 +45,7 @@ function App() {
       </section>
       <nav className='wrapper h-20  flex items-center justify-between '>
         <a href="./" className='w-1/3 max-w-[140px]'>
-          <img src="/public/logo.svg" alt=""  className='w-full'/>
+          <img src="./logo.svg" alt=""  className='w-full'/>
         </a>
         <input type="checkbox" name="" id="menu" className='peer hidden'/>
         <label htmlFor="menu" className=' text-white bg-open-menu w-6 h-5 bg-cover bg-center cursor cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden'></label>
