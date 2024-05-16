@@ -1,6 +1,6 @@
 export default  [
     {
-        img: "/public/1.jpg",
+        img: "./1.jpg",
         title: "Cree JavaScript",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
