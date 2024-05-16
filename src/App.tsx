@@ -44,8 +44,8 @@ function App() {
           </ul>
         </div>
       </section>
-      <nav className='wrapper h-20  flex items-center justify-between  mt-2   '>
-        <a href="./" className='w-1/3 max-w-[250px]'>
+      <nav className='wrapper h-20  flex items-center justify-between '>
+        <a href="./" className='w-1/3 max-w-[140px]'>
           <img src="./logo.svg" alt=""  className='w-full'/>
         </a>
         <input type="checkbox" name="" id="menu" className='peer hidden'/>
@@ -62,7 +62,7 @@ function App() {
       </nav>
       {/*Image Slider */}
       <section className='z-30' >
-        <div className='max-w-[1400px] h-[780px] w-full m-auto py-2 px-2 static md:relative group  z-30'>
+        <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 static md:relative group  z-30'>
           <div style={{backgroundImage:`url(${slides[currentIndex].url})`}} 
               className='w-full h-full   rounded-2xl bg-center bg-cover duration-500  z-10'>
            </div>     
