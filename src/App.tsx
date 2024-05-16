@@ -2,13 +2,14 @@ import './App.css'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube ,  FaArrowLeft, FaArrowRight   } from "react-icons/fa";
 import  { useState } from 'react';
 import { RxDotFilled } from "react-icons/rx";
+import Cards from './components/cards';
 
 function App() {
 
   const slides = [
-   {url:"https://mdbcdn.b-cdn.net/img/new/slides/041.webp"},
-    {url:"https://mdbcdn.b-cdn.net/img/new/slides/042.webp"},
-    { url:"https://mdbcdn.b-cdn.net/img/new/slides/043.webp"}
+  {url:"https://mdbcdn.b-cdn.net/img/new/slides/041.webp"},
+  {url:"https://mdbcdn.b-cdn.net/img/new/slides/042.webp"},
+  { url:"https://mdbcdn.b-cdn.net/img/new/slides/043.webp"}
   ];
 
   const [currentIndex, setCurrentindex] = useState(2);
@@ -32,7 +33,7 @@ function App() {
   return (
     <header className=' bg-black'>
       {/*Navegation */}
-      <section className='bg-red-700'>
+      <section className='bg-red-700 '>
         <div className=' wrapper text-sm text-white flex  items-center justify-between p-2'>
           <a href="" className='hidden md:block' >info@sportfacilities.com.ar</a>
           <ul className='flex grip gap-6  '>
@@ -43,25 +44,25 @@ function App() {
           </ul>
         </div>
       </section>
-      <nav className='wrapper h-20  flex items-center justify-between '>
-        <a href="./" className='w-1/3 max-w-[140px]'>
-          <img src="/public/logo.svg" alt=""  className='w-full'/>
+      <nav className='wrapper h-20  flex items-center justify-between  mt-2   '>
+        <a href="./" className='w-1/3 max-w-[250px]'>
+          <img src="./logo.svg" alt=""  className='w-full'/>
         </a>
         <input type="checkbox" name="" id="menu" className='peer hidden'/>
         <label htmlFor="menu" className=' text-white bg-open-menu w-6 h-5 bg-cover bg-center cursor cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden'></label>
-        <div className='fixed inset-0  bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none'>
-          <ul className=' absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-white'>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Carreras</a></li>
-            <li><a href="">Clacificacion</a></li>
-            <li><a href="">Run</a></li>
+        <div className='fixed inset-0  bg-gradient-to-b from-white/80 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none'>
+          <ul className=' absolute inset-x-0 top-24 p-12  w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-white italic text-xl'>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Inicio</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Nosotros</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Carreras</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2'><a href="">Clacificacion</a></li>
+            <li className='lg:hover:bg-slate-800/80 lg:py-20 lg:px-2'><a href="">Run +</a></li>
           </ul>
         </div>
       </nav>
       {/*Image Slider */}
       <section className='z-30' >
-        <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 static md:relative group  z-30'>
+        <div className='max-w-[1400px] h-[780px] w-full m-auto py-2 px-2 static md:relative group  z-30'>
           <div style={{backgroundImage:`url(${slides[currentIndex].url})`}} 
               className='w-full h-full   rounded-2xl bg-center bg-cover duration-500  z-10'>
            </div>     
@@ -87,6 +88,9 @@ function App() {
                     ) )}
               </div>
         </div>
+      </section>
+      <section>
+        <Cards/>
       </section>
     </header>     
   )
