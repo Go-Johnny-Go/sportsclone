@@ -9,7 +9,7 @@ export default  [
         place:"Salta"
     },
     {
-        img: "/public/2.jpg",
+        img: "./2.jpg",
         title: "Compl tutorial",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"15",
@@ -18,7 +18,7 @@ export default  [
         place:"Salta"
     },
     {
-        img: "/public/3.jpg",
+        img: "./3.jpg",
         title: "Bootstrap 5 tutorial",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
@@ -27,7 +27,7 @@ export default  [
         place:"Cordoba"
     },
     {
-        img: "/public/4.jpg",
+        img: "./4.jpg",
         title: "Complete tutorial",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"28",
@@ -36,7 +36,7 @@ export default  [
         place:"Cordoba"
     },
     {
-        img: "/public/5.jpg",
+        img: "./5.jpg",
         title: "Tailwind CSs",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
@@ -45,7 +45,7 @@ export default  [
         place:"Cordoba"
     },
     {
-        img: "/public/6.jpg",
+        img: "./6.jpg",
         title: "Reactjs beginner",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
@@ -54,7 +54,7 @@ export default  [
         place:"Plata"
     },
     {
-        img: "/public/7.jpg",
+        img: "./7.jpg",
         title: "Nextjs  course",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
@@ -63,7 +63,7 @@ export default  [
         place:"Plata"
     },
     {
-        img: "/public/8.jpg",
+        img: "./8.jpg",
         title: "Create Tailwind CSS",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
         day:"26",
