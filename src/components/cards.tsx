@@ -6,7 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 function Cards (){
 
     return(
-     <div className="wrapper mx-auto  py-20 px-8">
+     <div className="wrapper mx-auto  pb-20 pt-5 ">
        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2">
        {cardList.map(card =>( 
     <div className='text-white shadow-lg rounded-lg bg-slate-800/50 '>
