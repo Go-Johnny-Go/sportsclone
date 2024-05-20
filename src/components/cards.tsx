@@ -11,7 +11,7 @@ function Cards (){
        {cardList.map(card =>( 
     <div className='text-white shadow-lg rounded-lg bg-slate-800/50 '>
              <img src= {card.img} alt="" className=' opacity-50  hover:opacity-100'/>
-             <div className='p-5 grid gap-6'>
+             <div className='p-5 grid gap-2'>
                 <h3 className='text-2xl italic font-bold  h-14 my-4'>{card.title}</h3>
                 <div className='flex gap-4 '>
                     {/* Month and Day*/}
