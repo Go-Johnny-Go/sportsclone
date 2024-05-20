@@ -35,41 +35,4 @@ export default  [
         hour:"09:00",
         place:"Cordoba"
     },
-    {
-        img: "./5.jpg",
-        title: "Tailwind CSs",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
-        day:"26",
-        month:"MAY",
-        hour:"09:00",
-        place:"Cordoba"
-    },
-    {
-        img: "./6.jpg",
-        title: "Reactjs beginner",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
-        day:"26",
-        month:"MAY",
-        hour:"09:00",
-        place:"Plata"
-    },
-    {
-        img: "./7.jpg",
-        title: "Nextjs  course",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
-        day:"26",
-        month:"MAY",
-        hour:"09:00",
-        place:"Plata"
-    },
-    {
-        img: "./8.jpg",
-        title: "Create Tailwind CSS",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius molestias, quasi, quam omnis magnam impedit hic totam repudiandae reiciendis voluptate inventore nisi quidem.",
-        day:"26",
-        month:"MAY",
-        hour:"09:00",
-        place:"Plata"   
-    },
-
 ]
