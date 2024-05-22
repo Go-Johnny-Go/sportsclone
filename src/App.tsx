@@ -62,13 +62,13 @@ function App() {
         </a>
         <input type="checkbox" name="" id="menu" className='peer hidden'/>
         <label htmlFor="menu" className=' text-white bg-open-menu w-6 h-5 bg-cover bg-center cursor cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden'></label>
-        <div className='fixed inset-0  bg-gradient-to-b from-black/90 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none  '>
+        <div className='fixed inset-0  bg-black  translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none  '>
           <ul className=' absolute inset-x-0 top-24 p-12  w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-white italic text-xl md:text-sm lg:text-2xl text-white'>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Inicio</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Nosotros</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2' ><a href="">Carreras</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2'><a href="">Clacificacion</a></li>
-            <li className='lg:hover:bg-slate-800/80 lg:py-20 lg:px-2'><a href="">Run +</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Inicio</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Nosotros</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Carreras</a></li>
+            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600'><a href="">Clacificacion</a></li>
+            <li className='lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600'><a href="">Run +</a></li>
           </ul>
         </div>
       </nav>
