@@ -5,13 +5,19 @@ import { RxDotFilled } from "react-icons/rx";
 import Cards from './components/cards';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Inicio from './pages/Inicio';
+import Nosotros from './pages/Nosotros';
+import Carreras from './pages/Carreras';
+import Clasificacion from './pages/Clasificacion';
+import Run from './pages/Run';
+import NavBar from './navigation/NavBar';
 function App() {
 
   const slides = [
   {url:"https://mdbcdn.b-cdn.net/img/new/slides/041.webp"},
   {url:"https://mdbcdn.b-cdn.net/img/new/slides/042.webp"},
-  { url:"https://mdbcdn.b-cdn.net/img/new/slides/043.webp"}
+  {url:"https://mdbcdn.b-cdn.net/img/new/slides/043.webp"}
   ];
 
   const [currentIndex, setCurrentindex] = useState(2);
@@ -42,6 +48,9 @@ function App() {
 
 
   return (
+    
+   <Router>
+
     <header className=' bg-black'>
       {/*Social media */}
       <section className='bg-red-700 '>
@@ -56,22 +65,17 @@ function App() {
         </div>
       </section>
       {/*Navegation */}
-      <nav className='wrapper h-20 py-8  flex items-center justify-between  z-50  relative md:static lg:static '>
-        <a href="./" className='w-1/3 max-w-[250px]'>
-          <img src="./logo.svg" alt=""  className='w-full'/>
-        </a>
-        <input type="checkbox" name="" id="menu" className='peer hidden'/>
-        <label htmlFor="menu" className=' text-white bg-open-menu w-6 h-5 bg-cover bg-center cursor cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden'></label>
-        <div className='fixed inset-0  bg-black  translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none  '>
-          <ul className=' absolute inset-x-0 top-24 p-12  w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static md:text-white italic text-xl md:text-sm lg:text-2xl text-white'>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Inicio</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Nosotros</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600' ><a href="">Carreras</a></li>
-            <li className=' lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600'><a href="">Clacificacion</a></li>
-            <li className='lg:hover:bg-slate-800/80 lg:py-20 lg:px-2 hover:text-red-600'><a href="">Run +</a></li>
-          </ul>
-        </div>
-      </nav>
+      
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/carreras" element={<Carreras />} />
+          <Route path="/clasificacion" element={<Clasificacion />} />
+          <Route path="/run" element={<Run />} />
+        </Routes>
+    
+      
       {/*Image Slider */}
       <section className='wrapper  mb-4' >
         <div className='max-w-[1700px] h-[80%] w-full m-auto lg:h-[580px] py-2  lg:px-0 static md:relative group '>
@@ -94,9 +98,9 @@ function App() {
               <div className=' flex top-4 justify-center py-2  z-30'>
                     {slides.map((_, slideIndex) =>(
                       <div 
-                        key={slideIndex} 
-                        onClick={() => goToSlide(slideIndex) } 
-                        className='text-white text-2xl cursor-pointer'
+                      key={slideIndex} 
+                      onClick={() => goToSlide(slideIndex) } 
+                      className='text-white text-2xl cursor-pointer'
                       >
                         <RxDotFilled />
                       </div>
@@ -108,7 +112,8 @@ function App() {
       <section>
         <Cards/>
       </section>
-    </header>     
+    </header>
+  </Router>
   )
 }
 
